@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng | PHUC SPORT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="img/logo-removebg-preview.png"
+            alt="Logo"
+            height="45"
+            class="me-2"
+          />
+          <span>PHUC SPORT</span>
+        </a>
+
+        <!-- Toggle button (mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Về chúng tôi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Thương hiệu</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Adidas</a></li>
+                <li><a class="dropdown-item" href="#">Nike</a></li>
+                <li><a class="dropdown-item" href="#">Puma</a></li>
+                <li><a class="dropdown-item" href="#">Asics</a></li>
+                <li><a class="dropdown-item" href="#">Mizuno</a></li>
+                <li><a class="dropdown-item" href="#">NMS</a></li>
+                <li><a class="dropdown-item" href="#">Kamito</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Search -->
+          <form class="d-flex me-3" role="search">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Tìm kiếm..."
+              id="search-input"
+            />
+          </form>
+
+          <!-- User + Cart -->
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item d-flex align-items-center" id="user-info">
+              <a
+                class="nav-link d-flex align-items-center"
+                href="signup.html"
+                id="user-link"
+              >
+                <i class="fa-solid fa-user me-1"></i><span id="username"></span>
+              </a>
+              <a href="#" id="logout-btn" class="logout-link ms-2">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <div class="container my-5">
+      <h1 class="text-center mb-4">🛒 Giỏ hàng của bạn</h1>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá tiên</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items"></tbody>
+        </table>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <h3 id="total" class="text-danger">Tổng tiền: 0₫</h3>
+        <button id="checkout" class="btn btn-success">
+          <i class="fa-solid fa-credit-card"></i> Thanh toán
+        </button>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+    <!-- để navbar đồng bộ user/logout -->
+  </body>
+</html>

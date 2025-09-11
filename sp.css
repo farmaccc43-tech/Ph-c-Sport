@@ -1,0 +1,167 @@
+nav{
+    background: linear-gradient(to right,#666,rgb(116, 103, 103));
+    display: flex;
+}
+.container-fuild #button{
+    background-color: #f36;
+}
+#button{
+    background-color: rgb(51, 204, 255);
+}
+#header a{
+    height: auto;
+    padding-top: 30px;
+    text-decoration: none;
+}
+#search img{
+    width: 100px;
+    height: auto;
+    padding-bottom: 10px;
+   
+}
+#navbar {
+    background-color: rgb(160, 210, 233);
+    display: flex;
+    justify-content: center;   
+    align-items: center;    
+    height: 60px;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+#card{
+    display: flex;
+    padding-left: 10px;
+}
+#card li{
+    list-style: none;
+    padding: 3px;
+}
+.carousel-inner div img{
+    width: 500px;
+    height: 100px;
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+.sp{
+    padding-left: 40px;
+}
+.sp img{
+    width: 800px;
+    height: 600px;
+     align-items: center;
+    justify-content: center;
+}
+#product-name{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.product-price{
+    color: red;
+    padding-left: 20px;
+}
+#nhan-hieu{
+    font-size: 10px;
+    padding-left: 20px;
+}
+#cam-ket{
+    color: red;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.container{
+    justify-content: center;
+    display: flex;
+
+}
+#mo-ta{
+    align-items: center;
+    padding: 20px;
+}
+#button1 {
+    padding: 20px;
+    background-color: white;
+}
+#button1 button{
+    color: rgb(255, 255, 0);
+    background-color: rgb(254, 28, 16);
+    width: 200px;
+}
+/* Navbar đẹp */
+.custom-navbar {
+  background: linear-gradient(to right, #444, #666);
+  padding: 10px 20px;
+}
+
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff !important;
+}
+
+.custom-navbar .navbar-brand span {
+  letter-spacing: 1px;
+}
+
+.custom-navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 6px;
+  transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.custom-navbar .dropdown-menu {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#search-input {
+  min-width: 200px;
+  padding: 6px 12px;
+}
+
+#logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#logout-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.logout-link {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.logout-link i{
+    color: white;
+}
+.logout-link:hover{
+    color: #ffd700;
+}
+
